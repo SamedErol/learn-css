@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 100px;
+            border: springgreen solid;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width:400px) {
+            body {
+                background-color: yellow;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        /* 
+        object-fit : none ; boyut değiştirmez
+        fill ; varsayılan değer. İçinde bulunduğu nesnenin boyutunu alır, genişlik ve yükseklik kutuya sığacak şekilde değişir.
+        contain ; En-boy oranı korunarak içinde bulunduğu nesneye göre boyut değiştirir.
+        cover ; En-boy oranı korunarak içinde bulunduğu nesneye göre boyut değiştirir, kutu içine sığmak için resim kırpılır.
+        */
+    </style>
+</head>
+
+<body>
+    <img src="resim/turk.jpg">
+</body>
+
+</html>
